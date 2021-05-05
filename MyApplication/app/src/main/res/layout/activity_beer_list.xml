@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Theme.AppCompat.Light.DarkActionBar"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <ImageButton
+                android:id="@+id/listMyBeersBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="?android:selectableItemBackground"
+                android:onClick="listMyBeersClick"
+                android:paddingLeft="16dp"
+                android:paddingTop="-2dp"
+                android:src="@drawable/profile_black_icon" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/listSearchTxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ListSearchTxt"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="30dp"
+                    android:maxLines="1"
+                    android:layout_marginTop="-14dp"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/listListTitle"
+                    style="@style/screensTitles"
+                    android:text="@string/ListAllTitleName" />
+            </FrameLayout>
+
+            <ImageButton
+                android:id="@+id/listSearchCloseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:onClick="listSearchCloseClick"
+                android:paddingRight="16dp"
+                android:src="@drawable/magnifying_icon" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/listScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/listTextTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:text="@string/ListTextTxt"
+                    android:textColor="@color/black"
+                    android:textSize="36sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/beerListRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/listNewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/brewPink"
+        android:onClick="newBeerClick"
+        android:src="@drawable/new_beer" />
+
+
+</RelativeLayout>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.brewforsome.etxekakatua.brewforsome.views.BeerDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp">
+
+
+        <TextView
+            android:id="@+id/listListTitle"
+            style="@style/screensTitles"
+            android:text="@string/beerDetailTitle" />
+
+        <ImageButton
+            android:id="@+id/detailCloseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:onClick="detailCloseClick"
+            android:src="@drawable/close_icon" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/detailScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/detailNameTxt"
+                style="@style/beerDetailTitlesTxt"
+                android:text="@string/detailNameTxt" />
+
+            <TextView
+                android:id="@+id/detailBeerNameTxt"
+                style="@style/beerDetailTitlesTxt"
+                android:textColor="@color/brewPink"
+                android:text="hola"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/detailStyleTxt"
+                style="@style/beerDetailTitlesTxt"
+                android:text="@string/from" />
+
+            <TextView
+                android:id="@+id/detailBeerBrewerNameTxt"
+                style="@style/beerDetailTitlesTxt"
+                android:textColor="@color/black"
+                android:text="@string/from" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/beer_icon" />
+
+                <TextView
+                    android:id="@+id/detailBeerStyleTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="Imperial Stout"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/location_icon" />
+
+                <TextView
+                    android:id="@+id/detailBeerLocationTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="Madrid"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detailCommentLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detailComentTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detailComentTxt"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/detailBeerCommentsTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="hola"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/brewerWants"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/detailBeerInterestsTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="IPA, Neipa, Porter, Stout"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detailHopLay"
+                style="@style/beerDetailElementsLay">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/hop_icon" />
+
+                <TextView
+                    style="@style/beerDetailElementsTitleTxt"
+                    android:text="@string/detailHopsTxt" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detailBeerHopsTxt"
+                style="@style/beerDetailElementsDescriptionTxt"
+                android:background="@drawable/hop_text"
+                android:text="@string/detailHopsTxt" />
+
+            <LinearLayout
+                android:id="@+id/detailMaltLay"
+                style="@style/beerDetailElementsLay">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/malt_icon" />
+
+                <TextView
+                    style="@style/beerDetailElementsTitleTxt"
+                    android:text="@string/detailMaltsTxt" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detailBeerMaltsTxt"
+                style="@style/beerDetailElementsDescriptionTxt"
+                android:background="@drawable/malt_text"
+                android:text="hola" />
+
+            <LinearLayout
+                android:id="@+id/detailYeastLay"
+                style="@style/beerDetailElementsLay">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/yeast_icon" />
+
+                <TextView
+                    style="@style/beerDetailElementsTitleTxt"
+                    android:text="@string/detailYeastTxt" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detailBeerYeastTxt"
+                style="@style/beerDetailElementsDescriptionTxt"
+                android:background="@drawable/yeast_text"
+                android:text="hola" />
+
+
+            <LinearLayout
+                android:id="@+id/detailExtraLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/detailExtrasTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detailExtrasTxt"
+                    android:textColor="@color/black"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/detailBeerExtrasTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="hola"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detailAbvLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/lil_line" />
+
+                <TextView
+                    android:id="@+id/detailBeerAbvTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="6,5%"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/detailAbvTxt"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:letterSpacing="0.06"
+                android:gravity="center_horizontal"
+                tools:text="It’s a match? Don’t loose your chance"
+                android:textColor="@color/brewPink"/>
+
+            <Button
+                android:id="@+id/detailReachBtn"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="detailReachClick"
+                android:text="@string/detailRichBtn"
+                android:background="@drawable/background_gradient"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+
+            <LinearLayout
+                android:id="@+id/beerContactLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="28dp"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/phoneBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="?android:selectableItemBackground"
+                    android:onClick="phoneBeerClick"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/phone" />
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/emailBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="emailBeerClick"
+                    android:layout_marginRight="20dp"
+                    android:background="?android:selectableItemBackground"
+                    android:src="@drawable/email" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

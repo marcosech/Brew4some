@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    tools:context="com.brewforsome.etxekakatua.brewforsome.views.SignupActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/registerMessageTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registerBrewerMessageLbl" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRegisterUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/registerUserTxtInp">
+
+        <EditText
+            android:id="@+id/signUserTxt"
+            style="@style/registerUserTxt"
+            android:inputType="text"
+            android:hint="@string/registerUserHint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRegisterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/registerUserTxtInp">
+
+        <EditText
+            android:id="@+id/signEmailTxt"
+            style="@style/registerUserTxt"
+            android:hint="@string/registerEmailHint"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRegisterPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white"
+        style="@style/registerPassTxtInp">
+
+        <EditText
+            android:id="@+id/signPassTxt"
+            style="@style/registerPassTxt"
+            android:hint="@string/registerPassHint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRegisterPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/registerUserTxtInp">
+
+        <EditText
+            android:id="@+id/signPhoneTxt"
+            style="@style/registerUserTxt"
+            android:hint="@string/registerPhoneHint"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/signSignupBtn"
+        android:text="@string/registerRegisterBtn"
+        android:layout_marginTop="10dp"
+        style="@style/SignupLoginBtn"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="-10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/haveAccountLbl"
+            android:textColor="@color/white"
+            android:letterSpacing="0.08"/>
+
+        <Button
+            android:id="@+id/loginClickBtn"
+            android:text="@string/loginRegisterBtn"
+            style="@style/loginClickHereBtn" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

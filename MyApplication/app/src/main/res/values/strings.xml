@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name">Brew4Some</string>
+
+    <!---LOGIN ACTIVITY-->
+    <string name="loginBrewerMessageLbl">Hi <b>brewer</b>, \nwelcome home \nagain! </string>
+    <string name="loginUserHint">EMAIL</string>
+    <string name="loginPassHint">PASSWORD</string>
+    <string name="loginLoginBtn"><b>LOG IN</b></string>
+    <string name="loginForgotTxt">Did you forget your password?</string>
+    <string name="loginForgotBtn"><b>Click Here</b></string>
+    <string name="loginRegisterLbl">Don"'"t you have an account?</string>
+    <string name="loginRegisterBtn"><b>Go!</b></string>
+
+
+    <!---Messages login-->
+    <string name="errorLogin">Ooooops!! Sorry, try again later</string>
+    <string name="successLogin">You"'"re logged in</string>
+
+
+    <!---REGISTER ACTIVITY-->
+
+    <string name="registerBrewerMessageLbl">Hi <b>brewer</b>, \nwelcome to your \nnew home! </string>
+    <string name="registerUserHint">NOMBRE</string>
+    <string name="registerEmailHint">EMAIL</string>
+    <string name="registerPassHint">PASSWORD</string>
+    <string name="registerPhoneHint">PHONE NUMBER</string>
+    <string name="registerLocationHint">LOCATION</string>
+    <string name="registerRegisterBtn">SIGN UP</string>
+    <string name="haveAccountLbl">Already have an account?</string>
+
+    <!---Messages register-->
+    <string name="errorSignup">There"'"s been a problem with the sign up, try again later</string>
+    <string name="successSignup">The user was created correctly</string>
+    <string name="emailErrorFormat">The email format is not correct</string>
+    <string name="passErrorFormat">The password must have at least 8 characters, one minus, one mayus and a number</string>
+    <string name="passPhoneFormat">The phone format is not correct</string>
+    <string name="emptyFields">It"'"s mandatory to fill all the fields</string>
+
+    <!---FORGOT ACTIVITY-->
+    <string name="forgotBrewerMessageLbl">Hi <b>brewer</b>, \nsoon you will \nbe at your \nhome again! </string>
+    <string name="forgotSaveBtn">Recover pass</string>
+
+    <!---Messages forgot-->
+    <string name="errorRecover">There was an error, try it later</string>
+    <string name="successRecover">An email has been sent to recover your password</string>
+
+    <!---BEERS ACTIVITY-->
+    <string name="ListTextTxt">For you, \nwith <b>hops!</b></string>
+    <string name="ListSearchTxt">name, location, style, interests...</string>
+    <string name="ListAllTitleName">YOUR BEER SELECTION</string>
+
+    <!---NEW BEER-->
+    <string name="newTitleTxt">Basic data</string>
+    <string name="newNameHint">BEER NAME</string>
+    <string name="newStyleHint">TYPE OF BEER</string>
+    <string name="newComentTxt">DESCRIPTION</string>
+    <string name="newComentHint">Something special about your beer</string>
+    <string name="newInterestsHint">WHAT BEERS DO YOU WANT?</string>
+    <string name="newTitleTwoTxt">For the expert brewers</string>
+    <string name="newExtraHint">TYPE OF BEER</string>
+    <string name="newAbvHint">ABV</string>
+    <string name="newExtrasHint">Anything else to add?</string>
+    <string name="newExtrasTxt">EXTRAS</string>
+    <string name="newLocationHint">WHERE IS THE BEER?</string>
+    <string name="newPostBeerBtn">LET"'"S GO!</string>
+    <string name="editBeerDeleted">Beer deleted</string>
+
+    <!---Messages new beer-->
+    <string name="mustName">The name of the beer is mandatory</string>
+    <string name="mustStyle">The style of the beer is mandatory</string>
+    <string name="mustInterests">Your interests are mandatory</string>
+    <string name="mustLocation">Your location is mandatory</string>
+
+    <!---DETAIL BEER ACTIVITY-->
+
+    <string name="beerDetailTitle">BEER DETAILS</string>
+    <string name="detailNameTxt">Beer</string>
+    <string name="detailComentTxt">DESCRIPTION</string>
+    <string name="detailMaltsTxt">Malts</string>
+    <string name="detailHopsTxt">Hops</string>
+    <string name="detailYeastTxt">Yeast</string>
+    <string name="detailAbvTxt">ABV</string>
+    <string name="detailExtrasTxt">EXTRAS</string>
+    <string name="detailInterestsTxt">the brewer wants</string>
+    <string name="detailPhoneBeerBtn">Publicar</string>
+    <string name="detailEmailBeerBtn">Publicar</string>
+    <string name="detailRichBtn">TRY TO REACH IT!</string>
+
+
+    <!---MY BEERS ACTIVITY-->
+
+    <string name="myBeersTxt">MY BEERS</string>
+    <string name="myProfileTxt">MY PROFILE</string>
+    <string name="myTitleTxt">Here, your <b>hops!</b></string>
+
+    <!---USER ACTIVITY-->
+
+    <string name="userSaveBtn">SAVE DATA</string>
+    <string name="userLogoutLbl">Do you want to logout?</string>
+    <string name="userResetLbl">Do you want to reset your password?</string>
+    <string name="userTitleLbl">YOUR DATA</string>
+
+
+
+    <!---FIREBASE-->
+    <string name="facebook_app_id">143477992972968</string>
+    <string name="facebook_app_secret_id">029de9a9e2a84bf296f1ef9a9acca56e</string>
+    <string name="title_activity_beer_list">BeerListActivity</string>
+
+    <!---COMMONS-->
+    <string name="brewerWants">the brewer wants</string>
+    <string name="from">from</string>
+
+
+</resources>

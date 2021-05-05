@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/registerMessageTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgotBrewerMessageLbl" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilForgotUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/registerUserTxtInp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp">
+
+        <EditText
+            android:id="@+id/forgotUserTxt"
+            style="@style/registerUserTxt"
+            android:hint="@string/registerEmailHint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/forgotBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/forgotSaveBtn"
+        style="@style/SignupLoginBtn"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="35dp"
+        android:paddingTop="80dp"
+        android:layout_centerVertical="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/haveAccountLbl"
+            android:textColor="@color/white"
+            android:letterSpacing="0.08"/>
+
+        <Button
+            android:id="@+id/forgotLoginBtn"
+            android:text="@string/loginRegisterBtn"
+            style="@style/loginClickHereBtn" />
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

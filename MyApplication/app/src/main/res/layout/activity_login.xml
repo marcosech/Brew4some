@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    tools:context="com.brewforsome.etxekakatua.brewforsome.views.LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loginBrewerMessageLbl"
+        style="@style/loginMessageTxt"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilLoginUser"
+        style="@style/loginUserTxtInp"
+        app:hintTextAppearance="@style/TextInputLogin">
+
+        <EditText
+            android:id="@+id/loginUserTxt"
+            android:hint="@string/loginUserHint"
+            style="@style/loginUserTxt"/>
+    </com.google.android.material.textfield.TextInputLayout>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/user_icon"
+            android:layout_alignParentRight="true"
+            android:paddingTop="32dp"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilLoginPass"
+        style="@style/loginPassTxtInp"
+        app:passwordToggleEnabled="true"
+        app:hintTextAppearance="@style/TextInputLogin"
+        app:passwordToggleTint="@color/white">
+
+        <EditText
+            android:id="@+id/loginPassTxt"
+            android:hint="@string/loginPassHint"
+            style="@style/loginPassTxt"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="-15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginForgotTxt"
+        android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/forgotBtn"
+            android:text="@string/loginForgotBtn"
+            style="@style/loginClickHereBtn"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:text="@string/loginLoginBtn"
+        style="@style/SignupLoginBtn"
+        android:layout_marginTop="35dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="-15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loginRegisterLbl"
+            android:textColor="@color/white"
+            android:letterSpacing="0.08"/>
+
+        <Button
+            android:id="@+id/loginSignupBtn"
+            android:text="@string/loginRegisterBtn"
+            style="@style/loginClickHereBtn" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

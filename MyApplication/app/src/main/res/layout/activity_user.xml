@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp"
+        android:paddingTop="40dp">
+
+        <ImageButton
+            android:id="@+id/listMyBeersBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="?android:selectableItemBackground"
+            android:onClick="listMyBeersClick"
+            android:paddingLeft="16dp"
+            android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/listListTitle"
+                style="@style/screensTitles"
+                android:text="@string/userTitleLbl"
+                android:textColor="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/userCloseBtn"
+            android:layout_width="32dp"
+            android:layout_height="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:onClick="userCloseClick"
+            android:paddingRight="16dp"
+            android:src="@drawable/close_icon" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRegisterUser"
+        style="@style/registerUserTxtInp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/signUserTxt"
+            style="@style/registerUserTxt"
+            android:hint="@string/registerUserHint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRegisterEmail"
+        style="@style/registerUserTxtInp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/signEmailTxt"
+            style="@style/registerUserTxt"
+            android:hint="@string/registerEmailHint"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRegisterPass"
+        style="@style/registerPassTxtInp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/white">
+
+        <EditText
+            android:id="@+id/signPassTxt"
+            style="@style/registerPassTxt"
+            android:hint="@string/registerPassHint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilRegisterPhone"
+        style="@style/registerUserTxtInp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/signPhoneTxt"
+            style="@style/registerUserTxt"
+            android:hint="@string/registerPhoneHint"
+            android:inputType="phone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/userChangeBtn"
+        style="@style/SignupLoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="changeDataClick"
+        android:text="@string/userSaveBtn" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.08"
+            android:text="@string/userResetLbl"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/userPassResetBtn"
+            style="@style/loginClickHereBtn"
+            android:onClick="userPassResetClick"
+            android:paddingLeft="-10dp"
+            android:text="@string/loginRegisterBtn" />
+    </LinearLayout>
+
+
+</LinearLayout>

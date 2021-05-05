@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.brewforsome.etxekakatua.brewforsome.views.NewBeerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+
+        <TextView
+            android:id="@+id/listListTitle"
+            style="@style/screensTitles"
+            android:text="@string/beerDetailTitle" />
+
+        <ImageButton
+            android:id="@+id/newCloseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/close_icon" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detailNameTxt"
+                style="@style/beerDetailTitlesTxt"
+                android:text="@string/newTitleTxt" />
+
+            <ImageView
+                android:id="@+id/photoImg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/newNameTxt"
+                    style="@style/newFieldEdit"
+                    android:hint="@string/newNameHint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/newStyleTxt"
+                    style="@style/newFieldEdit"
+                    android:hint="@string/newStyleHint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNewLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/newLocationTxt"
+                    style="@style/newFieldEdit"
+                    android:hint="@string/newLocationHint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="@string/newComentTxt" />
+
+            <EditText
+                android:id="@+id/newComentTxt"
+                style="@style/newBoxEdit"
+                android:hint="@string/newComentHint"
+                android:inputType="textMultiLine" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNewInterests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/newInterestsTxt"
+                    style="@style/newFieldEdit"
+                    android:hint="@string/newInterestsHint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/beerDetailTitlesTxt"
+                android:layout_marginTop="45dp"
+                android:text="@string/newTitleTwoTxt" />
+
+            <LinearLayout
+                style="@style/beerDetailElementsLay">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/hop_icon" />
+
+                <TextView
+                    android:text="@string/detailHopsTxt"
+                    style="@style/beerDetailElementsTitleTxt" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/newHopsTxt"
+                style="@style/beerDetailElementsDescriptionTxt"
+                android:background="@drawable/hop_text"/>
+
+            <LinearLayout
+                style="@style/beerDetailElementsLay">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/malt_icon" />
+
+                <TextView
+                    android:text="@string/detailMaltsTxt"
+                    style="@style/beerDetailElementsTitleTxt" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/newMaltsTxt"
+                style="@style/beerDetailElementsDescriptionTxt"
+                android:background="@drawable/malt_text"/>
+
+            <LinearLayout
+                style="@style/beerDetailElementsLay">
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/yeast_icon" />
+
+                <TextView
+                    android:text="@string/detailYeastTxt"
+                    style="@style/beerDetailElementsTitleTxt" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/newYeastTxt"
+                style="@style/beerDetailElementsDescriptionTxt"
+                android:background="@drawable/yeast_text"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="@string/newExtrasTxt" />
+                <EditText
+                    android:id="@+id/newExtrasTxt"
+                    style="@style/newBoxEdit"
+                    android:hint="@string/newExtrasHint" />
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNewAbv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/newAbvTxt"
+                    style="@style/newFieldEdit"
+                    android:hint="@string/newAbvHint" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/newBeerBtn"
+                android:text="@string/newPostBeerBtn"
+                android:visibility="visible"
+                style="@style/newSaveBtn"/>
+
+            <LinearLayout
+                android:id="@+id/beerEditLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/deleteBtn"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_weight="1"
+                    style="@style/newSaveBtn"
+                    android:text="Delete" />
+
+                <Button
+                    android:id="@+id/editBtn"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="25dp"
+                    style="@style/newSaveBtn"
+                    android:text="Edit" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Cancel"
+                android:visibility="gone"
+                style="@style/newSaveBtn"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
